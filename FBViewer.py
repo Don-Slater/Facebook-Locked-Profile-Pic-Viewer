@@ -10,10 +10,14 @@ def parseUrl(urlSmall):
                 place = urlSmall[30:iii]
                 nameStartIndex = urlSmall.rindex("/") + 1
                 name = urlSmall[nameStartIndex:]
-                print("name: " + name)
-                print("full pic link:")
+                print("***********************************************************************")
+                print("******************************Result***********************************")
+                print("Name: " + name)
+                print("Full pic link:")
                 print("http://sphotos-g.ak.fbcdn.net/hphotos-"+place+"/"+name)
+                print("***********************************************************************")
         else:
+                print("-----------------------------------------------------------------------")
                 print("this:")
                 print(urlSmall)
                 print("should be:")
@@ -22,6 +26,9 @@ def parseUrl(urlSmall):
                 print("https://fbcdn-profile-a.akamaihd.net/...........")
                 print("remove the -a and amaihd, then replace fbcdn to end of ak.")
                 print("That should get things working.")
+                print("in case there is a https:// prefix, remove the https://")
+                print("make it start with profile.ak.fbcdn.net/hprofile")
+                print("-----------------------------------------------------------------------")
 
 def loopy():
         print ("Hey !")
