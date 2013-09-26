@@ -14,7 +14,7 @@ res = rs.request("get",
 file = open("datafile.txt", "w")
 data = res.json()
 st=""
-
+#we need to fix this portion
 for key1 in data:
 	for key2 in key1+1:
 		print (key2)
